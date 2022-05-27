@@ -19,6 +19,9 @@ function calcular (firstNumber, secondNumber, operation) {
         case "dividir":
             result = firstNumber / secondNumber
             break
+        case "restar":
+            result = firstNumber - secondNumber
+            break;
     
         default:
            console.log("Operación no valida")
@@ -33,3 +36,4 @@ calcular(2, 3, "suma")
 calcular(3, 5, "multiplicar")
 calcular (10, 2, "dividir")
 calcular(2, 6, "hola")
+calcular(10, 3, "restar")
