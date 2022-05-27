@@ -23,6 +23,11 @@ class persona {
         this.edad = valorEdad
         this.ciudad = nombreCiudad
     } 
+
+    saludar() {
+        return "hola, mi nombre es " + this.nombre
+    }
+
 }
 let hombre = new persona("Henry", 49, "Lima")
 let hombre2 = new persona("Oscar", 32, "Bogotá")
@@ -31,4 +36,8 @@ console.log(hombre.edad)
 console.log(hombre.ciudad)
 console.log(hombre2.ciudad)
 console.log(typeof(hombre))
+console.log(hombre.saludar())
 
+
+console.log()
+hombre.saludar()
