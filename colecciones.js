@@ -32,13 +32,31 @@
 //     }
 // });
 
-let persona = new Map()
-persona.set("Nombre", "Henry")
-persona.set("Edad", 49)
-persona.set("Ciudad", "Lima")
-console.log(persona)
-console.log(persona.get("Nombre"))
-console.log(persona.get("Edad"))
-console.log(persona.get("Ciudad"))
+// let persona = new Map()
+// persona.set("Nombre", "Henry")
+// persona.set("Edad", 49)
+// persona.set("Ciudad", "Lima")
+// console.log(persona)
+// console.log(persona.get("Nombre"))
+// console.log(persona.get("Edad"))
+// console.log(persona.get("Ciudad"))
 
+let personas = []
+let persona1 = new Map()
+persona1.set("Nombre", "Henry")
+persona1.set("Edad", 49)
+persona1.set("Ciudad", "Lima")
 
+personas.push(persona1)
+console.log(personas)
+
+let persona2 = new Map()
+persona2.set("Nombre", "Oscar")
+persona2.set("Edad", 32)
+persona2.set("Ciudad", "Lima")
+personas.push(persona2)
+console.log(personas)
+
+personas.forEach(persona => {
+    console.log("Mi edad es " + persona.get("Edad"))
+})
