@@ -1,7 +1,7 @@
 // Colecciones Indexadas
 //let arreglo = new Array("platano", "manzana", "pera");
 //let arreglo2 = Array("platano", "manzana", "pera")
-let arreglo3 = ["platano", "manzana", "pera"]
+//let arreglo3 = ["platano", "manzana", "pera"]
 //console.log(arreglo)
 //console.log(arreglo2)
 // console.log(arreglo3)
@@ -23,11 +23,22 @@ let arreglo3 = ["platano", "manzana", "pera"]
 //     }
 // }
 
-arreglo3.forEach(fruta => {
+// arreglo3.forEach(fruta => {
 
-    if (fruta == "platano") {
-        console.log("Soy un " + fruta);
-    } else {
-        console.log("Soy una " + fruta )
-    }
-});
+//     if (fruta == "platano") {
+//         console.log("Soy un " + fruta);
+//     } else {
+//         console.log("Soy una " + fruta )
+//     }
+// });
+
+let persona = new Map()
+persona.set("Nombre", "Henry")
+persona.set("Edad", 49)
+persona.set("Ciudad", "Lima")
+console.log(persona)
+console.log(persona.get("Nombre"))
+console.log(persona.get("Edad"))
+console.log(persona.get("Ciudad"))
+
+
