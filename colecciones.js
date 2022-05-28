@@ -14,11 +14,20 @@ let arreglo3 = ["platano", "manzana", "pera"]
 // console.log(arreglo3)
 // console.log(arreglo3[1])
 
-for (let index = 0; index < arreglo3.length; index++) {
-    let fruta = arreglo3[index]
+// for (let index = 0; index < arreglo3.length; index++) {
+//     let fruta = arreglo3[index]
+//     if (fruta == "platano") {
+//         console.log("Soy un " + fruta);
+//     } else {
+//         console.log("Soy una " + fruta)        
+//     }
+// }
+
+arreglo3.forEach(fruta => {
+
     if (fruta == "platano") {
         console.log("Soy un " + fruta);
     } else {
-        console.log("Soy una " + fruta)        
+        console.log("Soy una " + fruta )
     }
-}
+});
