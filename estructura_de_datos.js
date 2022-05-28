@@ -42,7 +42,8 @@ console.log(hombre.saludar())
 console.log()
 hombre.saludar() */
 
-class Calculadora {
+/*class Calculadora {
+
     constructor(firstNumber, secondNumber) {
         this.firstNumber = firstNumber;
         this.secondNumber = secondNumber;
@@ -72,6 +73,22 @@ let calcDivision = new Calculadora(30, 10)
 console.log(calcSuma.suma());
 console.log(calcResta.resta());
 console.log(calcMultiplicar.multiplicacion());
-console.log(calcDivision.division());
+console.log(calcDivision.division());*/
+
+class Calculadora {
+    suma(firstNumber, secondNumber) {
+        return firstNumber + secondNumber
+    }
+
+    resta(primerNumero, seguundoNumero) {
+        return primerNumero - seguundoNumero
+    }
+
+}
+let calculadora = new Calculadora()
+let suma = calculadora.suma(7, 5)
+let resta = calculadora.resta(7, 5)
+console.log(suma)
+console.log(resta)
 
 
